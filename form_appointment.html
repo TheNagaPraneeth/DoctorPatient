@@ -1,0 +1,32 @@
+<form name = "addAppointment" method = "post" action = "addAppointment">
+<table width="30%" border="0" align="center" bgcolor="white">
+              <tr>
+                <td width="86" class="style5">DOCTOR</td>
+                <td width="88"><label>
+                 <select name="DOCTOR">
+                 <c:forEach var="doc" items="${doctors}">
+  					<option value="${doc.USERNAME}">${doc.USERNAME}(${doc.SPECIALITY})</option>
+				</c:forEach>
+				</select>
+                </label></td>
+              </tr>
+              <tr><br></tr>
+              <tr><br></tr>
+              <tr>
+                <td><span class="style7">SUBJECT</span></td>
+                <td><label>
+                  <textarea name="SUBJECT" id="SUBJECT" required></textarea>
+                  <input type="hidden" name="PATIENT" value="${user.USERNAME}">
+                  <input type="hidden" name="PATIENTMAIL" value="${user.EMAIL}">
+                  <input type="hidden" name="REMARK" value="">
+                </label></td>
+              </tr>
+             <tr>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit2" value="Submit">
+                </label></td>
+              </tr>
+			
+			</table>
+          </form>

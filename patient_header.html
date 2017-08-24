@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link type="text/css" href="myStyle.css" rel="stylesheet"> -->
+<meta charset="ISO-8859-1">
+<title>Doctor Appointment Application</title>
+</head>
+<body bgcolor="#ffffff" text="black" background="<c:url value="resources/images/patient.jpg"  />" > 
+<h3 text="white"> Patient can book appointment</h3>
+<div class="dropdown">
+<button class="dropbtn">Actions</button>
+	<div class="dropdown-content">
+    <a href ="appointmentForm?user=${user.USERNAME}" id="appointmentForm">Book Appointment</a>
+    <a href ="viewAppointmentPatient?user=${user.USERNAME}" id="viewAppointmentPatient">Check Booking</a>
+    </div>
+</div>
+<div class="dropdown">
+	<a href ="edit_profile?user=${user.USERNAME}" id="edit_profile"><button class="dropbtn">Edit Profile</button></a></div>
+<div class="dropdown">
+	<a href ="logout" id="logout"><button class="dropbtn">Logout</button></a>
+</div>
+</body>
+</html>

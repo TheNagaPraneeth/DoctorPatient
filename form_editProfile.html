@@ -1,0 +1,44 @@
+<form name = "updateProfile" method = "post" action = "updateProfile">
+<table width="30%" border="0" align="center" bgcolor="white">
+              <tr>
+                <td width="86" class="style5">First Name</td>
+                <td width="88"><label>
+                  <input type="text" name="FIRSTNAME" id="FIRSTNAME" value="${user.FIRSTNAME}" required>
+                </label></td>
+              </tr>
+              <tr>
+                <td><span class="style7">Last Name</span></td>
+                <td><label>
+                  <input type="text" name="LASTNAME" id="LASTNAME" value="${user.LASTNAME}" required>
+                </label></td>
+              </tr>
+              <tr>
+                <td><span class="style7">UserName</span></td>
+                <td><label>
+                  <input type="text" name="USERNAME" id="USERNAME"  value="${user.USERNAME}" required>
+                </label></td>
+              </tr>
+              <tr>
+                <td><span class="style7">Password</span></td>
+                <td><label>
+                  <input type="password" name="PASSWORD" id="PASSWORD" value="${user.PASSWORD}" required>
+                </label></td>
+              </tr>
+              <tr>
+                <td><span class="style7">Email</span></td>
+                <td><label>
+                  <input type="email" name="EMAIL" id="EMAIL" value="${user.EMAIL}" required>
+                  <input type="hidden" name="SPECIALITY" value="${user.SPECIALITY}" required>
+                  <input type="hidden" name="ID" value="${user.ID}" required>
+                  <input type="hidden" name="ORGANDONATION" value="${user.ORGANDONATION}" required>
+                </label></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit2" value="Submit">
+                </label></td>
+              </tr>
+			
+			</table>
+          </form>

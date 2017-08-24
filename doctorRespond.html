@@ -1,0 +1,36 @@
+<form name = "updateAppointment" method = "post" action = "updateAppointment">
+<table width="30%" border="0" align="center" bgcolor="white">
+              <tr>
+                <td width="86" class="style5">Patient</td>
+                <td width="88"><label>
+                <input type="text" name="PATIENT" value="${appointment.PATIENT}" readonly>
+                </label></td>
+              </tr>
+              <tr><br></tr>
+              <tr><br></tr>
+              <tr>
+                <td><span class="style7">SUBJECT</span></td>
+                <td><label>
+                  <textarea name="SUBJECT" id="SUBJECT" readonly>${appointment.SUBJECT}</textarea>
+                  <input type="hidden" name="ID" value = "${appointment.ID}">
+                  <input type="hidden" name="PATIENTMAIL" value="${appointment.PATIENTMAIL}">
+                  <input type="hidden" name="DOCTORMAIL" value="${appointment.DOCTORMAIL}">
+                  <input type="hidden" name="DOCTOR" value="${appointment.DOCTOR}">
+               		
+                </label></td>
+              </tr>
+              <tr>
+              <td><span class="style7">REMARK</span></td>
+              <td><label>
+              <textarea name="REMARK" id="REMARK">${appointment.REMARK}</textarea>
+              </label></td>
+              </tr>
+             <tr>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit2" value="Submit">
+                </label></td>
+              </tr>
+			
+			</table>
+          </form>

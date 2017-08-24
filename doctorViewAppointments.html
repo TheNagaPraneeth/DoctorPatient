@@ -1,0 +1,12 @@
+<table border="1" bgcolor="white">  
+<tr><th>Id</th><th>Request </th><th>Patient</th><th>Remark</th><th>Delete</th></tr>  
+   <c:forEach var="req" items="${request}">   
+   <tr>  
+   <td>${req.ID}</td>  
+   <td style="width:200px">${req.SUBJECT}</td>  
+   <td style="width:70px">${req.PATIENT}</td>
+   <td style="width:200px">${req.REMARK}</td>  
+   <td ><a href ="doctorRespond?iduser=${req.ID},${req.DOCTOR}" id="doctorRespond">Respond</a> </td>
+   </tr>  
+   </c:forEach>  
+   </table>  

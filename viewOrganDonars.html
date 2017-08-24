@@ -1,0 +1,9 @@
+<table border="1" bgcolor="white">  
+<tr><th>Name </th><th>Email</th></tr>  
+   <c:forEach var="req" items="${donors}">   
+   <tr>   
+   <td style="width:70px">${req.USERNAME}</td>  
+   <td style="width:200px">${req.EMAIL}</td>
+   </tr>  
+   </c:forEach>  
+   </table>  

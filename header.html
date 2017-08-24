@@ -1,0 +1,11 @@
+<c:choose>
+    <c:when test = "${user.SPECIALITY == 'PATIENT'}">
+        <%@ include file="/resources/header/patient_header.html" %>
+    </c:when>
+    <c:when test = "${user.SPECIALITY == 'EYES' || user.SPECIALITY == 'EAR' || user.SPECIALITY == 'DENTAL' || user.SPECIALITY == 'SKIN'}">
+    	<%@ include file="/resources/header/doctor_header.html" %>
+    </c:when>
+    <c:otherwise>
+        This is unkown.<br/>
+    </c:otherwise>
+</c:choose>
